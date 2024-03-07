@@ -4,16 +4,6 @@
 
 #define BUFFSIZE 4096
 
- * It must be run on one of the vcf cluster nodes (vcf0 - vcf3).
- */
-void check()
-{
-        hostname[9] = '\0';
-        if (strcmp(hostname, "csci-odin") == 0) {
-                exit(EXIT_FAILURE);
-        }
-  int n;
-  int home_len = strlen(home);
   while (1)
   {
     char* curr_directory = getcwd(cwd_buffer, sizeof(cwd_buffer));
